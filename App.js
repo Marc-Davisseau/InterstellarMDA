@@ -11,17 +11,17 @@ const App = () => {
 
 
 
-       <View style={{ height: 50, backgroundColor: "#343434", justifyContent:"center" }}>
+       <View style={{ height: 50, backgroundColor: "#343434", justifyContent:"center" ,paddingHorizontal:10}}>
        <Image
         source={require("./assets/imdb2.png")}
-        style={{height:60, width:60,color:"white"}}
+        style={{height:60, width:60}}
         resizeMode="contain"
    
       />
 
 
        </View>
-       <View style={{backgroundColor: "#202020"}}>
+       <View style={{backgroundColor: "#202020", paddingHorizontal:10}}>
         <Text style={styles.TextFilm}>Interstellar</Text>
         <Text style={styles.TextFilmCategorie}>2014 PG-13 2h 49min  Adventure,Drama,Sci-Fi</Text>
         </View>
@@ -34,7 +34,7 @@ const App = () => {
       />
       
 
-  <View style={{backgroundColor: "202020"}}>
+  <View style={{backgroundColor: "#202020"}}>
   <Text style={styles.TextFilmDescription}>A team of explorers travel through a wormhole in space in apptempt to ensure humanity's survival.</Text>
 
         <TouchableOpacity
@@ -62,10 +62,10 @@ const App = () => {
 </View>
 <View style={styles.Note} flex="1/3">
   <View style={styles.Metascore}>
-  <Text style={{color:"white", fontSize:'20'}}>74</Text>
+  <Text style={{color:"white", fontSize:20}}>74</Text>
   </View>
-<Text style={{color:"white", fontSize:'14'}}>Metascore</Text>
-<Text style={{color:"grey", fontSize:'12'}}>46 critic reviews</Text>
+<Text style={{color:"white", fontSize:14}}>Metascore</Text>
+<Text style={{color:"grey", fontSize:12}}>46 critic reviews</Text>
 </View>
 </View>
 <View style={{backgroundColor:"#191919", height:18}}></View>
@@ -152,6 +152,7 @@ Film:{
   backgroundColor:"#212121",
 display:"flex",
 flexDirection: "row",
+paddingHorizontal:10
 
 },
 
@@ -164,7 +165,7 @@ textAlign:'justify',
 marginLeft:15,
 width:'43%',
 
-backgroundColor:'202020'
+backgroundColor:'#202020'
 },
 
 button: {
